@@ -1,0 +1,150 @@
+@charset "utf-8";
+@import "destyle.css";
+
+/*
+common
+*/
+body {
+  font-size: 0.9rem;
+  font-family: "Hiragino Kaku Gothic ProN", Arial, sans-serif;
+  color: #383E45;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/*
+components
+*/
+.container {
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 0 auto;
+}
+.section-title {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 600;
+  border-bottom: 1px solid #383E45;
+}
+
+/*
+header
+*/
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 4%;
+  height: 60px;
+}
+.header-logo-link {
+  display: block;
+  width: 120px;
+  height: auto;
+}
+.header-list-item {
+  display: inline-block;
+  margin-left: 30px;
+}
+.header-list-item a {
+  font-weight: 300;
+  color: #24292E;
+}
+.header-list-item a:hover {
+  opacity: 0.6;
+}
+
+/*
+main-visual
+*/
+#main-visual img {
+  width: 100%;
+  height: 600px;
+}
+
+/*
+about
+*/
+#about {
+  margin-top: 80px;
+  text-align: center;
+}
+.about-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+.about-left img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.about-right {
+  max-width: 398px;
+  text-align: left;
+  margin-left: 30px;
+}
+.about-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about-text {
+  line-height: 1.5;
+}
+
+/*
+bicycle
+*/
+#bicycle {
+  margin-top: 100px;
+  text-align: center;
+}
+.bicycle-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 17px;
+  margin-top: 60px;
+}
+.bicycle-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.bicycle-text {
+  margin-top: 10px;
+}
+
+/*
+footer
+*/
+#footer {
+  margin: 110px 0 10px;
+  text-align: center;
+}
+.footer-copy-right {
+  font-size: 8px;
+}
+
+/*
+mediaQuery
+*/
+@media (max-width: 768px) {
+  .about-inner {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .about-right {
+    text-align: left;
+    margin: 10px 0 0;
+  }
+  .bicycle-inner {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
